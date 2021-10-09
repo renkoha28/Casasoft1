@@ -1,0 +1,41 @@
+#slide1 {
+  height: 500px;
+}
+
+#card1{
+  width: 32%;
+  z-index: 2;
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  border-radius: 11px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.card-title{
+  color: #000;
+  font-weight: bold;
+  opacity: unset;
+}
+
+#boton{
+  border-radius: 35px;
+  font-weight: bold;
+  width: 144px;
+}
+
+#extraImage{
+  z-index: 2;
+  position: fixed;
+  right: 18%;
+  top: 9%;
+  width: 213px;
+  height: 273px;
+}
+
+.carousel-indicators button{
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: black;
+}

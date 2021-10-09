@@ -1,17 +1,13 @@
-import { CarruselComponent } from './carrusel/carrusel.component';
-
+import { CarruselRoutingModule } from './carruselRouting.module';
 import { NgModule } from '@angular/core';
-import { CarouselModule } from 'ngx-owl-carousel-o';
+
+
+
 
 @NgModule({
-  declarations: [
-    CarruselComponent
-  ],
-  imports:[
-    CarouselModule,
-  ],
-  exports: [
-    CarruselComponent
+  declarations: [],
+  imports: [
+    CarruselRoutingModule
   ]
 })
 export class CarruselModule { }
