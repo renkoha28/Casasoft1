@@ -2,7 +2,7 @@
   height: 500px;
 }
 
-#card1{
+[name=cards]{
   width: 32%;
   z-index: 2;
   position: absolute;
@@ -27,9 +27,9 @@
 
 #extraImage{
   z-index: 2;
-  position: fixed;
+  position: absolute;
   right: 18%;
-  top: 9%;
+  top: 18%;
   width: 213px;
   height: 273px;
 }

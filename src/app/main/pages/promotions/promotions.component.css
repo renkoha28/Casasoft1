@@ -1,3 +1,15 @@
+[name=offcanvasIcon]{
+  position: absolute;
+  top: 2%;
+  left: 1%;
+}
+
+[name=cardGrid]{
+  position: absolute;
+  top: 8%;
+  left: 1%;
+}
+
 .card{
   border-radius: 10px;
 }
@@ -30,7 +42,24 @@
   border-color: white;
 }
 
-.modal-header{
+[name=modalImage]{
+  border-radius: 0px;
+  width: fit-content;
+  height: fit-content;
+  z-index: 1;
+}
 
+[name=modalIcon]{
+  position: absolute;
+  top: 5%;
+  right: 2%;
+  background-color: white;
+  z-index: 5;
+}
+
+
+.modal-header{
+  background-image: url(../../../../assets/promo-full-1.jpg);
+  background-size: 100% 100%;
 }
 

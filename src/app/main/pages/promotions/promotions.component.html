@@ -1,4 +1,8 @@
-<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+<button class="navbar-toggler" type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample"
+        name="offcanvasIcon">
    A
 </button>
 
@@ -17,9 +21,7 @@
   </div>
 </div>
 
-<br><br>
-
-<div class="container">
+<div class="container" name="cardGrid">
 <div class="row ">
   <div class="col">
     <div class="card text-white">
@@ -118,32 +120,21 @@
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
-
       <div class="modal-header">
-        <div class="card text-white">
-          <img src="../../../../assets/promo-full-1.jpg" class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <div class="container">
-              <div class="row">
-                <div class="col">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Last updated 3 mins ago</p>
-                </div>
-                <div class="col">
-                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    ACTIVATE
-                  </button>
-                </div>
-              </div>
-            </div>
-
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" name="modalIcon"></button>
+        <div class="container">
+          <div class="row row-cols-2">
+            <div class="col">Column</div>
+            <div class="col">Column</div>
+          </div>
+          <div class="row row-cols-2">
+            <div class="col">Column</div>
+            <div class="col">Column</div>
           </div>
         </div>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-
       <div class="modal-body">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eligendi minima illum harum illo nemo, at sed quaerat quae sint necessitatibus aliquam! Doloribus accusantium ratione odit consectetur nam facere ab!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta magnam quod sapiente commodi doloribus nemo atque repudiandae illum sequi quia praesentium animi, officia nam debitis deserunt dolores, reprehenderit molestiae eligendi?
       </div>
     </div>
   </div>
