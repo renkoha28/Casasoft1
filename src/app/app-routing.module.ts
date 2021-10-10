@@ -1,15 +1,18 @@
-import { CarruselModule } from './carrusel/carrusel.module';
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
+import { CarruselComponent } from './carrusel/carrusel/carrusel.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./carrusel/carrusel.module').then( h => h.CarruselModule)
+    component: CarruselComponent
+  },
+  { path: 'main',
+    loadChildren: () => import('./main/main.module').then( m => m.MainModule)
   },
   {
     path:'404',
