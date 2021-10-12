@@ -3,20 +3,63 @@
   top: 2%;
   left: 1%;
 }
-
-[name=cardGrid]{
-  position: absolute;
-  top: 8%;
-  left: 1%;
+.menuIcon div {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  margin: 6px 0;
+}
+div#offcanvasExample {
+  background: linear-gradient(to right, #f9e28f, #fad843);
+}
+ul.list-group li {
+  background: transparent;
+  font-weight:600;
+  border:0;
 }
 
+ul.list-group li.active {
+  color:#000;
+  font-weight:700;
+  border-bottom: 2px solid #fead25;
+}
+
+
+
+
+
+[name=cardGrid]{
+ margin-top:80px;
+}
 .card{
+  border:0;
   border-radius: 10px;
+  margin-bottom:25px;
 }
 
 .card-img{
   border-radius: 10px;
   z-index: 1;
+}
+
+h5.card-title {
+  color: #fead25;
+  font-size: 15px;
+  text-transform:uppercase;
+}
+
+p.card-text {
+  font-size: 12px;
+}
+
+button.btn.btn-outline-warning {
+  width: 110px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+button.btn.btn-outline-warning:hover {
+  color:#000;
+  background:#fad843;
 }
 
 .card:after {
@@ -26,12 +69,13 @@
   left: 0;
   right: 0;
   position: absolute;
-  background: linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(rgba(0,0,0,.2) 50%, rgba(0,0,0,1) 100%);
   border-radius: 10px;
   z-index: 2;
 }
 
 .card-img-overlay{
+  top: inherit;
   z-index: 3;
 }
 
@@ -58,8 +102,51 @@
 }
 
 
+.modal-dialog {
+  max-width: 80%;
+}
+
 .modal-header{
+  position:relative;
   background-image: url(../../../../assets/promo-full-1.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat:no-repeat;
+  height: 400px;
+}
+.modal-header:after{
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background: linear-gradient(rgba(0,0,0,.2) 50%, rgba(0,0,0,1) 100%);
+  border-radius: 10px;
+  z-index: 2;
+}
+.modal-header .row{
+  position:absolute;
+  bottom:20px;
+  width: 100%;
+  align-items: center;
+}
+.modal-title{
+  font-size: 30px;
+  color:#fead25;
+  text-transform: uppercase;
+}
+.modal-text{
+  font-size: 18px;
+  color:#fff;
+}
+button.btn.btn-modal.btn-outline-warning{
+  width: 50%;
+  font-size: 20px;
+  color:#000;
+  background:#fad843;
+}
+.modal-body {
+  padding: 45px;
 }
 
